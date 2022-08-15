@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: myfont;
+    src: url(santa.otf);
+}
+@font-face {
+    font-family: jost;
+    src: url(jost.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins','sans-serif';
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.navbar{
+    position: relative;
+    z-index: 5;
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    /*border: 2px solid greenyellow;*/
+}
+nav{
+
+    text-align: right;
+}
+.logo{
+    width: 45px;
+    cursor: pointer;
+    position: absolute;
+    left: 1%;
+    bottom: 30%;   
+    
+}
+
+.navbar ul li{
+    padding: 0 35px;
+    display: inline-block;
+    margin: 0 20px;
+}
+nav ul li a{
+    
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.navbar ul li a:hover:after{
+    width: 100%;
+}
+.cart1{
+    position: absolute;
+    cursor: pointer;
+    width: 20px;
+    bottom: 30%;
+    left: 95%;
+}
+.img_search{
+    position: absolute;
+    left: 75%;
+    bottom: 28%;
+    width: 20px;
+}
+
+.navbar input{
+    position: relative;
+    width: 190px;
+    height: 38px;
+    border-radius: 30px;
+    border-style: none;
+    bottom: 20%;
+}    
+.sidebar{
+    top: 0;
+    position: relative;
+    z-index: 2;
+    margin-top: -67px;
+    width: 4%;
+    height: 742px;
+    /*border: 2px solid white;*/
+    background-color: #101112;
+}
+.menuitems ul li
+{
+   
+   cursor: pointer;
+   padding: 30px 0;
+}
+.menuitems ul li img 
+{
+    position: absolute;
+    width: 40px;
+    padding-left: 30%;
+    padding-top: 100px;
+    justify-content: space-between;
+}
+.logout
+{
+    bottom: 25px;
+}
+.main{
+    position: relative;
+    z-index: 3;
+    /*border: 2px solid white;*/
+    text-align: left;
+    width: 500px;
+    height: 300px;
+    margin-left: 230px;
+    margin-top: -620px;
+    padding-bottom: 200px;
+}
+.main, h6,p
+{
+    color: white;
+    font-family:myfont;
+}
+main, h6{
+   font-size:  360%;
+}
+main ,p{
+    font-size: 120%;
+}
+.dot{
+    margin-top: 25px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 4;
+    
+    width: 170px;
+}
+.dot ul li, a  img{
+    width: 33px;
+    list-style-type:none;
+    display: inline;
+    text-decoration: none;  
+}
+.green
+{
+    width:20px;
+    padding-bottom: 7px;
+}
+.dollor
+{
+    color: white;
+    font-family: jost;
+    font-size: 23px;
+    margin-left: 27px;
+}
+.btn
+{
+
+    width: 500px;
+    height: 60px;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-top: 7px;
+    padding: 10px 0px;
+}
+.btn button, .btn1
+{
+    cursor: pointer;
+    width: 155px;
+    height: 38px;
+    border-radius: 30px;
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: 200;
+}
+
+.add
+{
+    margin-left: 30PX;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+.img_blk
+{
+
+    position: relative;
+    z-index: 4;
+    width: 520px;
+    height: 350px;
+    margin: -340px 0px 0px 850px;
+    background-color: #0D0D0D;
+    border-radius: 4%;
+}
+.img_blk img
+{   
+    position: absolute;
+    width: 600px;
+    cursor: pointer;
+    margin-top:-140px;
+    margin-left: -70px;
+}
+.img_blk p{
+    position: absolute;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+    font-family: Poppins;
+    margin: 310px 0px 45px 420px
+    
+}
+.endimg
+{
+    position: relative;
+    z-index: 6;
+    margin:10px 0 0 190px;
+    width: 78%;
+    height: 300px;
+    align-items: center;
+}
+.endimg img
+{
+    margin-top: 15px;
+    padding: 5px 0 0 40px;
+    width: 230px;
+}
+.endimg p{
+
+    font-family: Poppins;
+    text-align: center;
+    margin: -185px 0 0 15px;
+     
+}
+.btn1{
+    width: 90px;
+    border-style: none;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-top: 5px;
+    margin-left: 47%;
+    font-size: 20px;
+    font-weight: 200;
+}
+.fotter
+{
+    position: absolute;
+    width: 100%;
+    z-index: 7;
+    top: 185px;
+    right: 20px;    
+
+}
+.fotter img{
+    width:1360px;
+    padding-right: 170px;
+}
